@@ -42,7 +42,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Filters & Products */}
-      <section className="py-12 lg:py-16 bg-background">
+      <section className="py-12 lg:py-16 bg-[#F3F6F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Search & Filter Bar */}
           <div className="flex flex-col sm:flex-row gap-4 mb-10">

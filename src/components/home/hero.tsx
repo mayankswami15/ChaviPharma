@@ -110,7 +110,7 @@ export function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="absolute -bottom-4 -left-4 sm:bottom-6 sm:-left-6 bg-white rounded-xl shadow-lg shadow-navy/8 p-4 border border-border-light"
+              className="absolute -bottom-4 left-2 sm:bottom-6 sm:-left-6 bg-white rounded-xl shadow-lg shadow-navy/8 p-4 border border-border-light"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-green/10 flex items-center justify-center">
@@ -132,7 +132,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="absolute -top-4 -right-4 sm:top-6 sm:-right-6 bg-white rounded-xl shadow-lg shadow-navy/8 p-4 border border-border-light"
+              className="absolute -top-4 right-2 sm:top-6 sm:-right-6 bg-white rounded-xl shadow-lg shadow-navy/8 p-4 border border-border-light"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center">

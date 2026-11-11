@@ -10,7 +10,7 @@ export function FeaturedProducts() {
   const featured = getFeaturedProducts();
 
   return (
-    <section className="py-20 lg:py-28 bg-white" aria-labelledby="featured-heading">
+    <section className="py-20 lg:py-28 bg-[#F4F7F6]" aria-labelledby="featured-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div

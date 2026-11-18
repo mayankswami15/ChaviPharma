@@ -9,6 +9,9 @@ import {
   TrendingUp,
   Handshake,
   ArrowRight,
+  GraduationCap,
+  Award,
+  Sparkles,
 } from "lucide-react";
 import { siteConfig } from "@/data/company";
 
@@ -114,7 +117,7 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="p-8 rounded-2xl bg-white border border-border-light shadow-sm">
+            <div className="p-8 rounded-2xl bg-white border border-border shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
                 <Target className="w-6 h-6 text-teal" />
               </div>
@@ -127,7 +130,7 @@ export default function AboutPage() {
                 better health outcomes across the communities we serve.
               </p>
             </div>
-            <div className="p-8 rounded-2xl bg-white border border-border-light shadow-sm">
+            <div className="p-8 rounded-2xl bg-white border border-border shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-green/10 flex items-center justify-center mb-5">
                 <Eye className="w-6 h-6 text-green" />
               </div>
@@ -144,8 +147,74 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Founder / CEO */}
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="text-xs font-semibold text-teal uppercase tracking-wider">
+              Leadership
+            </span>
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-navy mt-1.5 mb-2">
+              Meet Our Founder
+            </h2>
+            <p className="text-text-muted text-sm sm:text-base max-w-xl mx-auto">
+              Guiding Chavi Pharmaceuticals with a vision for quality and trusted partnerships.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-2xl bg-background border border-border shadow-sm overflow-hidden">
+              <div className="grid md:grid-cols-[250px_1fr] items-center">
+                {/* Photo Side */}
+                <div className="p-6 sm:p-7 flex flex-col items-center text-center bg-white border-b md:border-b-0 md:border-r border-border h-full justify-center">
+                  <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-border-light shadow-md mb-3.5">
+                    <Image
+                      src="/images/about/founder.jpg"
+                      alt="Sumit Kumar Swami — Founder & CEO of Chavi Pharmaceuticals"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 144px, 144px"
+                    />
+                  </div>
+                  <h3 className="font-display font-bold text-lg text-navy">
+                    Sumit Kumar Swami
+                  </h3>
+                  <p className="text-teal font-semibold text-xs tracking-wide uppercase mt-0.5">
+                    Founder & CEO
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-1.5 mt-3">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-background border border-border rounded-md text-xs font-medium text-navy shadow-2xs">
+                      <GraduationCap className="w-3.5 h-3.5 text-teal" />
+                      B.Pharma
+                    </span>
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-background border border-border rounded-md text-xs font-medium text-navy shadow-2xs">
+                      <Award className="w-3.5 h-3.5 text-teal" />
+                      Age 26
+                    </span>
+                  </div>
+                </div>
+
+                {/* Bio Side */}
+                <div className="p-6 sm:p-8 lg:p-9 flex flex-col justify-center">
+                  <p className="text-text-muted text-sm sm:text-base leading-relaxed mb-3.5">
+                    Sumit Kumar Swami is the Founder & CEO of Chavi Pharmaceuticals Pvt. Ltd. A pharmacy graduate holding a{" "}
+                    <strong className="text-navy font-semibold">
+                      Bachelor of Pharmacy (B.Pharma) from Rai University, Ahmedabad
+                    </strong>
+                    , he established the enterprise with a focused commitment to quality-oriented healthcare formulations and long-term business integrity.
+                  </p>
+                  <p className="text-text-muted text-sm sm:text-base leading-relaxed">
+                    Under his active leadership, Chavi Pharmaceuticals is steadily expanding its portfolio of tablets, capsules, syrups, and topical formulations manufactured in alignment with WHO & GMP standards. At 26, his hands-on approach and pharmaceutical expertise drive the company&apos;s growth while providing dependable support to franchise and distribution partners across India.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-4">
@@ -160,7 +229,7 @@ export default function AboutPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="text-center p-6 rounded-2xl bg-background border border-border-light"
+                className="text-center p-6 rounded-2xl bg-white border border-border shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-6 h-6 text-teal" />
